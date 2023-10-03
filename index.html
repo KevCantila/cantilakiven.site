@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?">
     <!--  pINASPASAY KAII BROWNOUT UGMA -->
 
                   <!-- CDN -->
@@ -32,6 +33,38 @@
     </noscript>
   </head>
   <body id="top">
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103646719337335");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    
     <header class="bg-light">
       <!-- nAVIGATION ICONS -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
@@ -78,13 +111,6 @@
         <div class="col-lg-6">
           <div class="mt-5">
             <p class="lead text-uppercase mb-1"><bold>Hello I’m</bold></p>
-            <script>
-              function myalert() {
-                  alert("Welcome to GeeksforGeeks.\n " +
-                      "It is the best portal for computer" +
-                              "science enthusiasts!");
-              }
-            </script>
             <h3 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">Kiven Cantila </h3>
             <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100"><br><em>BS Computer Engineering Student</em> <br> | Welcome to My Site 😁 |</p>
             <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
@@ -94,6 +120,7 @@
                   <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cantilakiven/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">  Instagram</span></a></li>
                 </ul>
               </nav>
+              
             </div>
             <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="https://cvws.icloud-content.com/B/AcBHM3f9hlBHPn8xJfVqKahmGTHeAQhwWM9W5hSs9k02c42lJ3cDiN-0/Cantila_CV.pdf?o=AtC_P1hl9A6pH4Ruw6huIuKf8-upTEnQ-Yh9dtJKCSuW&v=1&x=3&a=CAogox8WHyQl8CHhIQ1gLf9RK-nFG7WLtIPsnb3yhZ-AjkISbxC2offwqTEYtv7S8qkxIgEAUgRmGTHeWgQDiN-0aieG8rszJZtKf1yvMmwgjHITyNzFQ4_lHqPaLMgl4cvSmEGpQ_Ekr61yJ-5AOSZeO5mNOUOMW0fKxHI_ptbgr5-jkUfMOCyjqTIpzkEjpr_RTg&e=1694873468&fl=&r=96671ae7-cb3a-4515-8b40-543d9a268788-1&k=l6UOkHoCF_50vlyATuR2rw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=143&s=DIcKwWc5_IQCrGItfFbdlGYoNE0&cd=i">Download My CV Here <i class="fas fa-arrow-right"></i></a></div>
           </div>
